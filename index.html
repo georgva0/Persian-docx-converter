@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang=en>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      
+        Optimo | Word converter &ndash; 
+      
+      
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="Basic" />
+    <noscript>
+      <style>
+        .iff-javascript-enabled {
+            display: none;
+        }
+      </style>
+    </noscript>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="site-heading">
+      <h1><a href="/">Optimo | MS Word document converter</a></h1>
+    </div>
+    <div class="content">
+      <div class="main">
+        
+          
+<p>
+This tool converts Microsoft Word documents in a format that can be pasted into Optimo. It also converts Latin to Farsi numerals & resolves Arabic characters in Farsi.
+</p>
+
+<h3>Convert Microsoft Word file:</h3>
+
+<div class="demo">
+  <p>
+    Select a .docx file: <input id="document" type="file" />
+  </p>
+
+  <h4>Output <button id="button1" onclick="selectText('output')">Select all text</button></h4>
+  
+
+  <div id="output">
+  </div>
+
+  <h4>Messages</h4>
+
+  <div id="messages">
+  </div>
+</div>
+
+<footer>
+  <p><em>*This tool uses the <a href="https://www.npmjs.com/package/mammoth">Mammoth</a> package by <a href="https://github.com/mwilliamson">Michael Williamson</a>.</em></p>
+</footer>
+
+<script src="copyToClipboard.js"></script>
+<script src="mammoth.browser.min.js"></script>
+<script src="demo.js"></script>
+
+<style>
+.demo {
+    /*margin: 0 -20px;*/
+    padding: 5px 20px;
+    background-color: #e1e3e5;
+}
+
+.demo #output {
+    background-color: #fff;
+    min-height: 200px;
+    margin: 0 -10px;
+    padding: 5px 10px;
+}
+
+.demo #output img {
+    max-width: 100%;
+}
+</style>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
